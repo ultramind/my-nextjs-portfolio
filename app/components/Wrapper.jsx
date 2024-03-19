@@ -30,7 +30,9 @@ const Wrapper = () => {
     }
   };
 
-  addEventListener("scroll", onscrollEffect);
+  if (typeof window !== "undefined") {
+    window.addEventListener("scroll", onscrollEffect);
+  }
 
   // Theme setting
   // theme settings
