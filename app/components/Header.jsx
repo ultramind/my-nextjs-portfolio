@@ -56,7 +56,7 @@ const Header = ({ theme, changeTheme }) => {
               duration={500}
               className="ml-10 text-2xl cursor-pointer"
             >
-              Home
+              Home ooh
             </Link>
             {/* <Link
               to=""
