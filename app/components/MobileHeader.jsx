@@ -12,16 +12,16 @@ const MobileHeader = ({ theme, changeTheme }) => {
   const [toggle, setToggle] = useState(false);
   const [navEffect, setNavEffect] = useState(false);
 
-  const activateStickyNav = () => {
-    if (window.scrollY >= 150) {
-      setNavEffect(true);
-    } else {
-      setNavEffect(false);
-    }
-  };
+  // const activateStickyNav = () => {
+  //   if (window.scrollY >= 150) {
+  //     setNavEffect(true);
+  //   } else {
+  //     setNavEffect(false);
+  //   }
+  // };
 
-  // adding the eventListner
-  addEventListener("scroll", activateStickyNav);
+  // // adding the eventListner
+  // addEventListener("scroll", activateStickyNav);
 
   // handle toggle
   const handleToggle = () => {
