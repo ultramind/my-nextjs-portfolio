@@ -3,6 +3,8 @@ import Image from "next/image";
 import Header from "./components/Header";
 import { useEffect, useState } from "react";
 import Aos from "aos";
+import MobileHeader from "./components/MobileHeader";
+import Hero from "./components/Hero";
 
 export default function Home() {
   const [theme, setTheme] = useState("light");
@@ -27,6 +29,13 @@ export default function Home() {
   return (
     <div>
       <Header theme={theme} changeTheme={handleThemeSwitch} />
+      <MobileHeader theme={theme} changeTheme={handleThemeSwitch} />
+      <Hero theme={theme} />
+      <hr
+        className={`w-[100%] border-2 ${
+          theme === "dark" ? "border-gray-800" : "border-gray-300"
+        }`}
+      />
     </div>
   );
 }
