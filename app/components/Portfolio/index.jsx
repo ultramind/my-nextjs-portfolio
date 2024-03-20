@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import img1 from "../../assets/images/portfolio/portfolio-1.PNG";
-import img2 from "../../assets/images/portfolio/portfolio-2.PNG";
-import img3 from "../../assets/images/portfolio/portfolio-3.PNG";
-import img4 from "../../assets/images/portfolio/portfolio-4.PNG";
-import img5 from "../../assets/images/portfolio/portfolio-5.PNG";
+import img1 from "../../assets/images/portfolio/portfolio-1.png";
+import img2 from "../../assets/images/portfolio/portfolio-2.png";
+import img3 from "../../assets/images/portfolio/portfolio-3.png";
+import img4 from "../../assets/images/portfolio/portfolio-4.png";
+import img5 from "../../assets/images/portfolio/portfolio-5.png";
 import { AiOutlineHeart } from "react-icons/ai";
 import AOS from "aos";
 import "aos/dist/aos.css";

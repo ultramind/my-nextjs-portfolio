@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import img from "../assets/images/author/footer-img.PNG";
+import img from "../assets/images/author/footer-img.png";
 import { Link } from "react-scroll";
 import { MdDarkMode } from "react-icons/md";
 import { CiDark } from "react-icons/ci";
