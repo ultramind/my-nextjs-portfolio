@@ -30,10 +30,21 @@ export default function Index() {
     }
   };
 
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+      console.log("Dark theme");
+    } else {
+      document.documentElement.classList.remove("dark");
+      console.log("Light theme");
+    }
+  }, [theme]);
+
   const handleThemeSwitch = () => {
     setTheme(theme == "dark" ? "light" : "dark");
     console.log(theme);
   };
+
   return (
     <div>
       <Header theme={theme} changeTheme={handleThemeSwitch} />
@@ -56,19 +67,14 @@ export default function Index() {
           theme === "dark" ? "border-gray-800" : "border-gray-300"
         }`}
       />
+      <Resume theme={theme} />
+      <hr
+        className={`w-[100%] border-2 ${
+          theme === "dark" ? "border-gray-800" : "border-gray-300"
+        }`}
+      />
+      {/* Testimonies */}
 
-      {/* <Resume theme={theme} />
-      <hr
-        className={`w-[100%] border-2 ${
-          theme === "dark" ? "border-gray-800" : "border-gray-300"
-        }`}
-      />
-      <Testimonial theme={theme} />
-      <hr
-        className={`w-[100%] border-2 ${
-          theme === "dark" ? "border-gray-800" : "border-gray-300"
-        }`}
-      />
       <Contact theme={theme} />
       <hr
         className={`w-[100%] border-2 ${
@@ -76,21 +82,6 @@ export default function Index() {
         }`}
       />
       <Footer />
-      <Link
-        to="home"
-        spy={true}
-        smooth={true}
-        offset={-100}
-        duration={500}
-        className={
-          navEffect &&
-          `p-4 ${
-            theme === "dark" ? "dark-theme-shadow-effect" : "shadow-default"
-          } cursor-pointer rounded-full text-primary font-bold text-2xl fixed right-4 bottom-8 z-10 ease-in-out duration-300`
-        }
-      >
-        <AiOutlineArrowUp />
-      </Link> */}
     </div>
   );
 }
