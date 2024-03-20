@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import img from "../assets/images/portfolio/portfolio-1.png";
 
 import { GrLinkNext } from "react-icons/gr";
-import { SlSocialFacebook } from "react-icons/sl";
 import { FiFacebook, FiLinkedin } from "react-icons/fi";
 import { TbBrandGithub, TbBrandTwitter } from "react-icons/tb";
 import Aos from "aos";
@@ -19,6 +18,7 @@ const Contact = ({ theme }) => {
         <h3 className="text-primary text-2xl">Contact</h3>
         <h1 className="text-4xl font-bold md:text-6xl">Contact With Me</h1>
       </div>
+
       <div className="space-y-12 md:flex mt-16 md:gap-12 md:space-y-0">
         <div
           className={`p-6 space-y-4 ${
@@ -37,11 +37,11 @@ const Contact = ({ theme }) => {
             I am available for freelance work. Connect with me via and call in
             to my account.
           </p>
-          <p>
+          <div>
             <h3>Phone: +234-7062668228</h3>
             <h3>Phone: +234-7045633760</h3>
             <h3>Email: udechukwuakachukwu@gmail.com</h3>
-          </p>
+          </div>
           {/* socials */}
           <div className="mb-8">
             <h3 className="font-medium text-lg">Find me with</h3>

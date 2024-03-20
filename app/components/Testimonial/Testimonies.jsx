@@ -1,3 +1,4 @@
+import React from "react";
 import { useEffect, useState } from "react";
 import testimonies from "../../constants/testimonial";
 import Testimony from "./Testimony";
@@ -8,7 +9,7 @@ import styles from "react-responsive-carousel/lib/styles/carousel.min.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-const Index = ({ theme }) => {
+const Testimonies = ({ theme }) => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
@@ -40,5 +41,4 @@ const Index = ({ theme }) => {
     </div>
   );
 };
-
-export default Index;
+export default Testimonies;

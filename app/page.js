@@ -8,11 +8,11 @@ import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
 import Resume from "./components/Resume";
-import Testimonial from "./constants/testimonial";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Link from "next/link";
 import { AiOutlineArrowUp } from "react-icons/ai";
+import Testimonies from "./components/Testimonial/Testimonies";
 
 export default function Index() {
   const [theme, setTheme] = useState("light");
@@ -30,6 +30,12 @@ export default function Index() {
     }
   };
 
+  if (typeof window !== "undefined") {
+    window.addEventListener("scroll", onscrollEffect);
+  }
+
+  // Theme setting
+  // theme settings
   useEffect(() => {
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
@@ -44,9 +50,8 @@ export default function Index() {
     setTheme(theme == "dark" ? "light" : "dark");
     console.log(theme);
   };
-
   return (
-    <div>
+    <div className="relative dark:bg-[#212428] dark:text-[#afb0b0]">
       <Header theme={theme} changeTheme={handleThemeSwitch} />
       <MobileHeader theme={theme} changeTheme={handleThemeSwitch} />
       <Hero theme={theme} />
@@ -73,8 +78,12 @@ export default function Index() {
           theme === "dark" ? "border-gray-800" : "border-gray-300"
         }`}
       />
-      {/* Testimonies */}
-
+      <Testimonies theme={theme} />
+      <hr
+        className={`w-[100%] border-2 ${
+          theme === "dark" ? "border-gray-800" : "border-gray-300"
+        }`}
+      />
       <Contact theme={theme} />
       <hr
         className={`w-[100%] border-2 ${
@@ -82,6 +91,21 @@ export default function Index() {
         }`}
       />
       <Footer />
+      <Link
+        href="/"
+        spy={true}
+        smooth={true}
+        offset={-100}
+        duration={500}
+        className={
+          navEffect &&
+          `p-4 ${
+            theme === "dark" ? "dark-theme-shadow-effect" : "shadow-default"
+          } cursor-pointer rounded-full text-primary font-bold text-2xl fixed right-4 bottom-8 z-10 ease-in-out duration-300`
+        }
+      >
+        <AiOutlineArrowUp />
+      </Link>
     </div>
   );
 }

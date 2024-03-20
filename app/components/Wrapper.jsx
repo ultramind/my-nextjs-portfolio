@@ -8,8 +8,8 @@ import Hero from "./Hero";
 import Services from "./Services";
 import Resume from "./Resume";
 import { AiOutlineArrowUp } from "react-icons/ai";
-import Testimonial from "./Testimonial";
-import { Link } from "react-scroll";
+import Testimonial from "./Testimonial/Index";
+import Link from "nextjs/link";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Portfolio from "./Portfolio";
@@ -92,7 +92,7 @@ const Wrapper = () => {
       />
       <Footer />
       <Link
-        to="home"
+        href="home"
         spy={true}
         smooth={true}
         offset={-100}
