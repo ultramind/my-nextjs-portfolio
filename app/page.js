@@ -22,18 +22,6 @@ export default function Index() {
     Aos.init({ duration: 1000 });
   }, []);
 
-  const onscrollEffect = () => {
-    if (window.scrollY >= 350) {
-      setNavEffect(true);
-    } else {
-      setNavEffect(false);
-    }
-  };
-
-  if (typeof window !== "undefined") {
-    window.addEventListener("scroll", onscrollEffect);
-  }
-
   // Theme setting
   // theme settings
   useEffect(() => {

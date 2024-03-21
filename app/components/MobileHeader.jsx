@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { AiOutlineAlignRight, AiOutlineClose } from "react-icons/ai";
-import img from "../assets/images/author/footer-img.png";
+import img from "../assets/images/author/footer-img.PNG";
 import { FiFacebook, FiLinkedin } from "react-icons/fi";
 import { TbBrandGithub, TbBrandTwitter } from "react-icons/tb";
 import { Link } from "react-scroll";
@@ -13,16 +13,16 @@ const MobileHeader = ({ theme, changeTheme }) => {
   const [toggle, setToggle] = useState(false);
   const [navEffect, setNavEffect] = useState(false);
 
-  // const activateStickyNav = () => {
-  //   if (window.scrollY >= 150) {
-  //     setNavEffect(true);
-  //   } else {
-  //     setNavEffect(false);
-  //   }
-  // };
+  const activateStickyNav = () => {
+    if (window.scrollY >= 150) {
+      setNavEffect(true);
+    } else {
+      setNavEffect(false);
+    }
+  };
 
-  // // adding the eventListner
-  // addEventListener("scroll", activateStickyNav);
+  // adding the eventListner
+  addEventListener("scroll", activateStickyNav);
 
   // handle toggle
   const handleToggle = () => {

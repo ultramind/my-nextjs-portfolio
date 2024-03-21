@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import img from "../assets/images/portfolio/portfolio-1.png";
+import img from "../assets/images/portfolio/portfolio-1.PNG";
 
 import { GrLinkNext } from "react-icons/gr";
 import { FiFacebook, FiLinkedin } from "react-icons/fi";
