@@ -7,6 +7,7 @@ import { TbBrandGithub, TbBrandTwitter } from "react-icons/tb";
 import { Link } from "react-scroll";
 import { CiDark } from "react-icons/ci";
 import { MdDarkMode } from "react-icons/md";
+import Image from "next/image";
 
 const MobileHeader = ({ theme, changeTheme }) => {
   const [toggle, setToggle] = useState(false);
@@ -41,7 +42,7 @@ const MobileHeader = ({ theme, changeTheme }) => {
       {/* logo */}
       <div className="logo flex justify-center items-center space-x-2">
         <div className="w-10 h-10 bg-gray-800 rounded-full overflow-hidden">
-          <img src={img} alt="" />
+          <Image src={img} alt="" />
         </div>
         <h1 className=" block text-2xl font-bold">Akachukwu</h1>
       </div>
@@ -68,7 +69,7 @@ const MobileHeader = ({ theme, changeTheme }) => {
         <div className="logo flex justify-between items-center space-x-2">
           <div className="flex items-center gap-2">
             <div className="w-15 h-15 bg-gray-800 rounded-full overflow-hidden">
-              <img src={img} className="w-[100%]" alt="" />
+              <Image src={img} className="w-[100%]" alt="" />
             </div>
             <h1 className=" block text-2xl font-bold">Akachukwu</h1>
           </div>

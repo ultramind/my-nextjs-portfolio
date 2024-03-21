@@ -1,7 +1,7 @@
 import img1 from "../assets/images/author/author-1.png";
 import img2 from "../assets/images/author/author-3.png";
 
-export default [
+const data =  [
   {
     img: img1,
     author: "Nevine Dhawan",
@@ -30,3 +30,5 @@ export default [
   //   body: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum reprehenderit dolores libero corrupti illo quis fuga laborum alias ullam porro id, blanditiis aperiam quae assumenda tenetur nulla maxime impedit eveniet quaerat autem.",
   // },
 ];
+
+export default data

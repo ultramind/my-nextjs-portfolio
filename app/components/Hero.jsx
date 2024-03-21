@@ -13,6 +13,7 @@ import { FiFacebook, FiLinkedin } from "react-icons/fi";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import Image from "next/image";
 
 const Hero = ({ theme }) => {
   useEffect(() => {
@@ -31,7 +32,10 @@ const Hero = ({ theme }) => {
       className="flex flex-col-reverse mb-24 px-4 space-y-8 pt-20 md:pt-10 md:px-12 md:flex-row md:items-center md:space-y-0 lg:items-center lg:px-36 lg:pt-8 lg:h-screen"
     >
       {/* Hero left content */}
-      <div className="left space-y-6 md:w-[85%] md:py-0 md:pr-16 md:space-y-10" data-aos="fade-up">
+      <div
+        className="left space-y-6 md:w-[85%] md:py-0 md:pr-16 md:space-y-10"
+        data-aos="fade-up"
+      >
         <h3 className="text-primary text-xl">WELCOME TO MY WORLD</h3>
         <h1 className="text-5xl font-bold md:text-6xl" data-aos="fade-up">
           Hi, I’m Akachukwu <br /> a{" "}
@@ -154,7 +158,7 @@ const Hero = ({ theme }) => {
             theme === "dark" ? "box-dark" : "box"
           } mb-8`}
         >
-          <img src={img} alt="" className="w-[100%] -mt-24" />
+          <Image src={img} alt="" className="w-[100%] -mt-24" />
         </div>
       </div>
     </div>

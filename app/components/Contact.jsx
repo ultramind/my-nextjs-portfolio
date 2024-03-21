@@ -6,6 +6,7 @@ import { FiFacebook, FiLinkedin } from "react-icons/fi";
 import { TbBrandGithub, TbBrandTwitter } from "react-icons/tb";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Image from "next/image";
 
 const Contact = ({ theme }) => {
   useEffect(() => {
@@ -28,7 +29,7 @@ const Contact = ({ theme }) => {
         >
           <div class="card flex-col space-y-4">
             <div>
-              <img src={img} className="w-[100%] rounded-lg" alt="" />
+              <Image src={img} className="w-[100%] rounded-lg" alt="" />
             </div>
             <h2 className="text-3xl font-bold">Nevine Acotanza</h2>
             <h2 className="text-primary text-xl">Chief Operating Officer</h2>
