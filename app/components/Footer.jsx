@@ -12,7 +12,7 @@ const Footer = () => {
         <h1 className="text-4xl font-bold">Akachukwu</h1>
       </div>
       <p className="text-2xl text-center">
-        © 2023.All rights reserved ULTRACODE.
+        © 2024.All rights reserved ULTRACODE.
       </p>
     </div>
   );

@@ -32,7 +32,7 @@ const Testimonies = ({ theme }) => {
         <h1 className="text-5xl font-bold md:text-6xl">Testimonial</h1>
       </div>
       <div className="flex flex-col mt-16 space-y-8 md:flex-row md:justify-between md:gap-16 md:mt-8 md:flex-wrap">
-        <Carousel interval={1000}>
+        <Carousel interval={1000} showThumbs={false}>
           {data.map((testimony, index) => {
             return <Testimony key={index} theme={theme} propData={testimony} />;
           })}

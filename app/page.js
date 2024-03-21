@@ -10,7 +10,7 @@ import Portfolio from "./components/Portfolio";
 import Resume from "./components/Resume";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Link from "next/link";
+import { Link } from "react-scroll";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import Testimonies from "./components/Testimonial/Testimonies";
 
@@ -92,7 +92,7 @@ export default function Index() {
       />
       <Footer />
       <Link
-        href="/"
+        to="home"
         spy={true}
         smooth={true}
         offset={-100}

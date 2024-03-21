@@ -9,17 +9,17 @@ import Image from "next/image";
 const Header = ({ theme, changeTheme }) => {
   const [navEffect, setNavEffect] = useState(false);
 
-  // const activateStickyNav = () => {
-  //   if (window.scrollY >= 150) {
-  //     setNavEffect(true);
-  //   } else {
-  //     setNavEffect(false);
-  //   }
-  //   console.log(window.screenY);
-  // };
+  const activateStickyNav = () => {
+    if (window.scrollY >= 150) {
+      setNavEffect(true);
+    } else {
+      setNavEffect(false);
+    }
+    console.log(window.screenY);
+  };
 
   // // adding the eventListner
-  // addEventListener("scroll", activateStickyNav);
+  addEventListener("scroll", activateStickyNav);
 
   return (
     <>
@@ -56,7 +56,7 @@ const Header = ({ theme, changeTheme }) => {
               duration={500}
               className="ml-10 text-2xl cursor-pointer"
             >
-              Home ooh
+              Home
             </Link>
             {/* <Link
               to=""
