@@ -1,7 +1,7 @@
-import img1 from "../assets/images/author/author-1.png";
-import img2 from "../assets/images/author/author-3.png";
+import img1 from "../assets/images/author/author-1.PNG";
+import img2 from "../assets/images/author/author-3.PNG";
 
-const data =  [
+const data = [
   {
     img: img1,
     author: "Nevine Dhawan",
@@ -31,4 +31,4 @@ const data =  [
   // },
 ];
 
-export default data
+export default data;
